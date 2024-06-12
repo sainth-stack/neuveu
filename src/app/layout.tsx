@@ -4,7 +4,8 @@ import { ReactNode, useEffect } from 'react';
 import '../styles/index.scss';
 // import ScrollToTop from '@/components/common/ScrollTop';
 import Footer from '@/app/footer/page';
-// import DefaulHeader from '@/components/Header';
+import Header from '@/components/Header/Header';
+import FirstSection from './first-section/FirstSection';
 
 if (typeof window !== 'undefined') {
   require('bootstrap/dist/js/bootstrap');
@@ -26,8 +27,9 @@ export default function RootLayout({ children }: IRootLayout) {
       </head>
       <body>
         <div className='main-page-wrapper'>
-          {/* <DefaulHeader /> */}
+          <Header />
           {children}
+          <FirstSection />
           <Footer />
           {/* <ScrollToTop /> */}
         </div>

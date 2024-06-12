@@ -5,7 +5,7 @@ export const metadata = {
 };
 
 const MainRoot = () => {
-  return <Insurance />;
+  return <></>;
 };
 
 export default MainRoot;
