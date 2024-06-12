@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import DefaulHeader from "@/components/Header";
+// import DefaulHeader from "@/components/Header";
 import Image from "next/image";
 
 export const metadata = {
@@ -15,7 +15,7 @@ const Pricing = () => {
       Theme Default Menu
       ============================================== 	
       --> */}
-      <DefaulHeader />
+      {/* <DefaulHeader /> */}
 
       {/* 
 			=============================================
