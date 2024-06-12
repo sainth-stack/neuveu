@@ -1,7 +1,6 @@
 import Link from 'next/link';
-
-
-
+import MiddleContent from '../../../public/middleContent';
+import {Grid} from '@mui/material';
 
 export const metadata = {
   title: 'Insurance || Jano - Creative Multipurpose React NextJS Template',
@@ -9,7 +8,11 @@ export const metadata = {
 
 const Insurance = () => {
   return (
- <>Home</>
+ <>Home
+<Grid>
+<MiddleContent />
+</Grid>
+ </>
   );
 };
 

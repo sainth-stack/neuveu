@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 
 
 
-const NumberAnimation = ({ number }) => {
+const NumberAnimation = ({ number }:any) => {
   const [count, setCount] = useState < number > (0);
 
   useEffect(() => {
-    let interval;
+    let interval:any;
     if (number > 0) {
       interval = setInterval(() => {
         setCount((prevCount) => {
@@ -17,7 +17,7 @@ const NumberAnimation = ({ number }) => {
             return prevCount;
           }
         });
-      }, 5); // Adjust the interval as needed for smoother/faster animation
+      }, 100); // Adjust the interval as needed for smoother/faster animation
     }
 
     return () => {
