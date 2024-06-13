@@ -25,7 +25,7 @@ const NumberAnimation = ({ number }:any) => {
     };
   }, [number]);
 
-  return <div>{count}</div>;
+  return count;
 };
 
 export default NumberAnimation;

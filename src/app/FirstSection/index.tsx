@@ -24,7 +24,7 @@ useEffect(() => {
     <Grid container justifyContent="center" className='first-section'>
     <Grid item>
         <Typography 
-            color='#F8F9FA1' 
+            color='#F8F9FA' 
             fontFamily='Inter' 
             fontSize='91px' 
             fontWeight='700' 
@@ -33,11 +33,11 @@ useEffect(() => {
             NEU VEU
         </Typography>
         <Grid container  justifyContent="center">
-        <Typography fontSize={'20px'} fontWeight={'300'}>Best Solutions for </Typography>
+        <Typography fontSize={'20px'} fontWeight={'300'}  color='#F8F9FA'>Best Solutions for </Typography>
 
         </Grid>
         <Grid container  justifyContent="center">
-        <Typography fontSize={'20px'} fontWeight={'300'}><strong style={{fontWeight:'700'}}>Digital and Cloud</strong>  Services</Typography>
+        <Typography fontSize={'20px'} fontWeight={'300'}  color='#F8F9FA'><strong style={{fontWeight:'700'}}>Digital and Cloud</strong>  Services</Typography>
 
         </Grid>
        
@@ -45,18 +45,18 @@ useEffect(() => {
     </Grid>
 <Grid container justifyContent="center" display={'flex'} gap={'80px'} mt={'600px'}>
     <Grid item display={'flex'} gap={'20px'}>
-   <Typography fontSize={'40px'} fontWeight={'400'}><NumberAnimation number={numbers.number1} /></Typography>
-   <Typography fontSize={'12px'} fontWeight={'300'} lineHeight={'25px'}>YEARS OF CONSULTING <br/> EXPERIENCE</Typography>
+   <Typography fontSize={'40px'} fontWeight={'400'}  color='#F8F9FA'><NumberAnimation number={numbers.number1} /></Typography>
+   <Typography fontSize={'12px'} fontWeight={'300'} lineHeight={'25px'}  color='#F8F9FA'>YEARS OF CONSULTING <br/> EXPERIENCE</Typography>
 
     </Grid>
     <Grid item display={'flex'} gap={'20px'}>
-   <Typography fontSize={'40px'} fontWeight={'400'}><NumberAnimation number={numbers.number2} /></Typography>
-   <Typography fontSize={'12px'} fontWeight={'300'} lineHeight={'25px'}>PROJECTS <br/> COMPLETED</Typography>
+   <Typography fontSize={'40px'} fontWeight={'400'}  color='#F8F9FA'><NumberAnimation number={numbers.number2} /></Typography>
+   <Typography fontSize={'12px'} fontWeight={'300'} lineHeight={'25px'}  color='#F8F9FA'>PROJECTS <br/> COMPLETED</Typography>
 
     </Grid>
     <Grid item display={'flex'} gap={'20px'}>
-   <Typography fontSize={'40px'} fontWeight={'400'}><NumberAnimation number={numbers.number3} /></Typography>
-   <Typography fontSize={'12px'} fontWeight={'300'} lineHeight={'25px'}>SATISFIED CLIENTS ON   <br/>8 COUNTRIES</Typography>
+   <Typography fontSize={'40px'} fontWeight={'400'}  color='#F8F9FA'><NumberAnimation number={numbers.number3} /></Typography>
+   <Typography fontSize={'12px'} fontWeight={'300'} lineHeight={'25px'}  color='#F8F9FA'>SATISFIED CLIENTS ON   <br/>8 COUNTRIES</Typography>
 
     </Grid>
 </Grid>
