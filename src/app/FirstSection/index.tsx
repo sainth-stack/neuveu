@@ -12,15 +12,8 @@ export default function MiddleContent() {
 });
 
 useEffect(() => {
-  const handleScroll = () => {
-    const windowHeight = window.innerHeight;
-    const documentHeight = document.documentElement.scrollHeight;
-    const scrollTop = document.documentElement.scrollTop;
-    // Check if the user has scrolled to the bottom of the page
-    // if (windowHeight + scrollTop === documentHeight) {
-    // Set the numbers you want to animate when scrolled to the bottom
-    setNumbers({ number1: 16, number2: 22, number3: 18 }); // You can set any numbers here
-    // }
+  const handleScroll = () => { 
+    setNumbers({ number1: 16, number2: 22, number3: 18 }); 
   };
 
   window.addEventListener('scroll', handleScroll);
@@ -28,7 +21,7 @@ useEffect(() => {
   return () => window.removeEventListener('scroll', handleScroll);
 }, []);
   return (
-    <Grid container justifyContent="center">
+    <Grid container justifyContent="center" className='first-section'>
     <Grid item>
         <Typography 
             color='#F8F9FA1' 

@@ -5,7 +5,7 @@ import '../styles/index.scss';
 // import ScrollToTop from '@/components/common/ScrollTop';
 import Footer from '@/app/footer/page';
 import Header from '@/components/Header/Header';
-import FirstSection from './first-section/FirstSection';
+import MiddleContent from './FirstSection';
 
 if (typeof window !== 'undefined') {
   require('bootstrap/dist/js/bootstrap');
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: IRootLayout) {
         <div className='main-page-wrapper'>
           <Header />
           {children}
-          <FirstSection />
+          <MiddleContent />
           <Footer />
           {/* <ScrollToTop /> */}
         </div>

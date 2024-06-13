@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import MiddleContent from '../../../public/middleContent';
+import MiddleContent from '../FirstSection';
 import {Grid} from '@mui/material';
 
 export const metadata = {
