@@ -93,23 +93,13 @@ export default function MiddleContent() {
         </Typography>
       </Grid>
 
-      {/* <div className='mountain-img-container'>
+      <div className='mountain-img-container'>
         <div className='mountain-widget-container'>
           <div className='iteck-image'>
             <Image loading="lazy" decoding="async" width="1478" height="1486" src={mountainImg} alt="mountain" />
           </div>
         </div>
-      </div> */}
-      <Grid item display={'flex'} justifyContent={'center'} >
-   <Card heading={'Cloud'} body={'We specialize in comprehensive multi-cloud strategies, seamless cloud migration, and optimized architecture, delivering scalable, secure, and agile cloud solutions'} image={Cloud }/>
-   <Card heading={'Containerization'} body={'We excel in containerization leveraging modern technologies like Kubernetes, ensuring cloud-agnostic, scalable, and efficient application deployment'} image={SRE }/>
-   <Card heading={'SRE'} body={'We offer expertise in delivering performance monitoring, incident management, and system optimization for unrivaled system reliability and scalability'} image={Containerization }/>
-   <Card heading={'Analytics'} body={'We deliver data-driven analytics solutions, harnessing advanced algorithms and visualization for informed decision-making and business success'} image={Analytics }/>
-   <Card heading={'DevSecOps'} body={'We accelerate your software delivery with streamlined DevSecOps pipelines, enhancing security collaboration, automation, and continuous improvement'} image={Devops }/>
-   <Card heading={'Platform Engineering'} body={'We provide advanced technology implementation, automation, seamless system management, and transformative innovation for enhanced efficiency and success'} image={platform }/>
-
-
-   </Grid>
+      </div>
       <Grid container justifyContent={'center'}>
         <Typography
           fontWeight={700}

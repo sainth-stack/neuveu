@@ -170,3 +170,32 @@ text-align: center;
     
 }
 
+.second-main-container{
+    background-attachment: fixed;
+    background-image: url('../../public/images/assets/services_work.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 100px 0px 100px 0px;
+    z-index: 1;
+    position: relative;
+    .elementor-container{
+        max-width: 1140px;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        flex-wrap: wrap;
+    }
+}
+
+.content-section{
+    padding: 10px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}

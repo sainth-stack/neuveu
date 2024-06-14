@@ -6,6 +6,7 @@ import '../styles/index.scss';
 import Footer from '@/app/footer/page';
 import Header from '@/components/Header/Header';
 import MiddleContent from './FirstSection';
+import SecondSection from './SecondSection';
 
 if (typeof window !== 'undefined') {
   require('bootstrap/dist/js/bootstrap');
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: IRootLayout) {
           <Header />
           {children}
           <MiddleContent />
+          <SecondSection />
           <Footer />
           {/* <ScrollToTop /> */}
         </div>
