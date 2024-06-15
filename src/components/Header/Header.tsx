@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import logo from '../../../public/images/assets/logo.png';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -15,23 +16,27 @@ const Header = () => {
                 </a>
               </div>
             </div>
-            <div className='list-div'>
-              <div className='d-flex menu-items'>
-                <ul id="menu-main-menu"
-                  className="home-nav navigation slide-up">
-                  <li
-                    className="menu-item">
-                    <a
-                      href="https://neuveu.com/contact/">CONTACT</a>
-                  </li>
-                </ul>
+            <Link href="/contactus" style={{width:'100%'}}>
+              <div className='list-div'>
+                <div className='d-flex menu-items'>
+                  <ul id="menu-main-menu"
+                    className="home-nav navigation slide-up">
+                    <li
+                      className="menu-item">
+
+                      <a
+                        href="https://neuveu.com/contact/">CONTACT</a>
+                    </li>
+                  </ul>
+                </div>
+
               </div>
-            </div>
+            </Link>
             <div></div>
           </div>
         </div>
       </section>
-    </nav>
+    </nav >
   )
 }
 

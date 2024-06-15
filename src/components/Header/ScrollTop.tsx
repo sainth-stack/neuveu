@@ -60,7 +60,7 @@ export default function ScrollToTop() {
           }}
         ></path>
       </svg>
-     <Image src={upArrow} width={16} height={16} alt=''/>
+      <Image src={upArrow} width={16} height={16} alt='' />
     </div>
   );
 }
