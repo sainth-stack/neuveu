@@ -6,6 +6,7 @@ import '../styles/index.scss';
 import Footer from '@/app/footer/page';
 import Header from '@/components/Header/Header';
 import AnimatedCursor from "react-animated-cursor";
+import ScrollToTop from '@/components/Header/ScrollTop';
 
 if (typeof window !== 'undefined') {
   require('bootstrap/dist/js/bootstrap');
@@ -53,7 +54,7 @@ export default function RootLayout({ children }: IRootLayout) {
           <Header />
           {children}
           <Footer />
-          {/* <ScrollToTop /> */}
+          <ScrollToTop />
         </div>
       </body>
     </html>
