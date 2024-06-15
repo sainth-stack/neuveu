@@ -211,3 +211,23 @@ text-align: center;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     padding: 100px 0px 100px 0px;
 }
+
+.rock-img{
+    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
+    
+
+}
+@keyframes rotate-center{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.iteck-image-animation-rotate{
+    width: 100%;
+    position: relative;
+    animation: rotate-center 100s linear infinite both;
+
+}
