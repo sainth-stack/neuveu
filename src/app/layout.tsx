@@ -7,6 +7,7 @@ import Footer from '@/app/footer/page';
 import Header from '@/components/Header/Header';
 import MiddleContent from './FirstSection';
 import SecondSection from './SecondSection';
+import ThirdSection from './ThirdSection';
 
 if (typeof window !== 'undefined') {
   require('bootstrap/dist/js/bootstrap');
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: IRootLayout) {
           {children}
           <MiddleContent />
           <SecondSection />
+          <ThirdSection />
           <Footer />
           {/* <ScrollToTop /> */}
         </div>
