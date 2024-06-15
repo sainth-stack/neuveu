@@ -15,6 +15,7 @@ import Image from 'next/image';
 
 import ConsultantTemplate from '@/components/Consultant';
 import NumberAnimation from '../NumberAnimation';
+import Link from 'next/link';
 const ThirdSection = () => {
 
   const [numbers, setNumbers] = useState({
@@ -83,8 +84,9 @@ const ThirdSection = () => {
                   desc={`
 						End-to-end services for your digital and cloud needs, with ongoing support and maintenance	.`}
                 />
-
-                <Button variant="outlined" style={{ background: '#02010100', borderColor: '#15F1FF', borderRadius: '30px', padding: '7px 25px', fontSize: '12px', borderWidth: '1px', marginTop: '70px', color: '#fff' }}>Request A Consultation</Button>
+                <Link href="/contactus">
+                  <Button variant="outlined" style={{ background: '#02010100', borderColor: '#15F1FF', borderRadius: '30px', padding: '7px 25px', fontSize: '12px', borderWidth: '1px', marginTop: '70px', color: '#fff' }}>Request A Consultation</Button>
+                </Link>
               </Grid>
             </Grid>
             <Grid container display={'flex'} justifyContent={'center'} gap={'150px'}>

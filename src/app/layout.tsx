@@ -31,25 +31,27 @@ export default function RootLayout({ children }: IRootLayout) {
           <AnimatedCursor
             innerSize={6}
             outerSize={35}
-            color="255, 255 ,255"
+            color="255, 255, 255"
             outerAlpha={0.5}
             innerScale={1}
             outerScale={1}
             outerStyle={{
               borderRadius: "50%",
-              borderWidth: '2px',
-              borderStyle: 'solid',
-              borderImage: 'linear-gradient(to right, #0DCAF0, #6F42C1, #D63384) 1',
-              boxSizing: 'border-box',
+              borderWidth: "2px",
+              borderStyle: "solid",
+              // borderImage: "linear-gradient(to right, #0DCAF0, #6F42C1, #D63384) 1",
+              // boxSizing: "border-box",
               width: "35px",
               height: "35px",
-              backgroundClip: 'content-box'
+              // backgroundClip: "content-box"
             }}
             innerStyle={{
-              backgroundColor: "#0dcaf0"
+              backgroundColor: "#0dcaf0",
+              borderRadius: "50%"
             }}
           />
         </div>
+
         <div className='main-page-wrapper'>
           <Header />
           {children}
