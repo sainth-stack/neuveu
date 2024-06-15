@@ -32,10 +32,6 @@ export default function RootLayout({ children }: IRootLayout) {
         <div className='main-page-wrapper'>
           <Header />
           {children}
-          <MiddleContent />
-          <SecondSection />
-          <ThirdSection />
-          <FourthSection />
           <Footer />
           {/* <ScrollToTop /> */}
         </div>
