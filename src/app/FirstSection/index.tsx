@@ -1,13 +1,13 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { Grid, Typography,Button } from '@mui/material';
+import { Grid, Typography, Button } from '@mui/material';
 import NumberAnimation from '@/app/NumberAnimation';
 import Image from 'next/image';
 import mountainImg from '../../../public/images/assets/mountain.png';
 
 
 export default function MiddleContent() {
- 
+
   return (
     <Grid container justifyContent='center' className='first-section'>
       <Grid item sx={{ zIndex: 1 }}>
@@ -40,7 +40,7 @@ export default function MiddleContent() {
         mt={'600px'}
         sx={{ zIndex: 1 }}
       >
-       
+
         <Typography
           textAlign={'center'}
           fontSize={'20px'}
@@ -74,7 +74,7 @@ export default function MiddleContent() {
           </div>
         </div>
       </div>
-     
+
     </Grid>
   );
 }
