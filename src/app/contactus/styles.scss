@@ -96,3 +96,29 @@
     color: white;
     margin-top: 20px;
 }
+
+/* styles.css */
+
+/* Base styles */
+.my-component {
+    position: absolute;
+    margin-top: 15%;
+    margin-right: 60%;
+  }
+  
+  /* Styles for screens with a width of 1600px or less */
+  @media (max-width: 1600px) {
+    .my-component {
+      margin-top: 14%;
+      margin-right: 58%;
+    }
+  }
+  
+  /* Styles for screens with a width of 1280px or less */
+  @media (max-width: 1280px) {
+    .my-component {
+      margin-top: 12%;
+      margin-right: 55%;
+    }
+  }
+  
