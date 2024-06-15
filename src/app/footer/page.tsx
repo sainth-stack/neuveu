@@ -1,4 +1,7 @@
 import './styles.scss'
+import linkedIn from '../../../public/images/assets/linkedIn.svg'
+import Image from 'next/image';
+import Link from 'next/link';
 const Footer = () => {
     return (
         <div>
@@ -11,13 +14,17 @@ const Footer = () => {
                             </a>
                         </div>
                         <div>
-                            <p style={{ color: 'white' }}>CONTACT</p>
+                            <Link href="/contactus">
+                                <p style={{ color: 'white' }}>CONTACT</p>
+                            </Link>
                         </div>
                         <div>
-                            <p style={{ color: 'white' }}>LINKEDIN</p>
+                            <a className="icon-border elementor-icon iteck-social-icon elementor-social-icon-linkedin-in elementor-repeater-item-1331773" href="https://www.linkedin.com/company/neuveu/" target="_blank">
+                                <Image src={linkedIn} width={20} height={20} alt='' />
+                            </a>
                         </div>
                     </div>
-                    <div style={{display:'flex',justifyContent:'center'}}>
+                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', marginTop: '50px' }}>
                         <p className='footer-desc'>© 2024 Copyrights by <a className='company-text' href="https://neuveu.com/">Neuveu Software Pvt Ltd. </a>All Rights Reserved.</p>
                     </div>
                 </div>

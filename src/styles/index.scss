@@ -186,6 +186,29 @@ ul>li {
     color: #12C2E9; /* Adjust the color as needed */
   }
   
+  .popupImage {
+
+    filter: drop-shadow(-10px 10px 20px #084CBA77);
+    transition: background 0.4s, border 0.4s, border-radius 0.4s, box-shadow 0.4s, transform 0.5s;
+    animation: moveForwardBackward 3s infinite;
+  }
+  
+  .icon-border {
+    display: inline-block;
+    padding: 10px; /* Optional: Add some padding if desired */
+    border: 2px solid #15F1FF;
+    border-radius: 50%; /* Optional: Add border-radius if desired */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  }
+
+  @keyframes moveForwardBackward {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
 .first-section {
     padding: 0px 15px 0px 15px;
     position: relative;
