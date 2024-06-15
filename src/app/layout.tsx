@@ -5,10 +5,6 @@ import '../styles/index.scss';
 // import ScrollToTop from '@/components/common/ScrollTop';
 import Footer from '@/app/footer/page';
 import Header from '@/components/Header/Header';
-import MiddleContent from './FirstSection';
-import SecondSection from './SecondSection';
-import ThirdSection from './ThirdSection';
-import FourthSection from './FourthSection';
 
 if (typeof window !== 'undefined') {
   require('bootstrap/dist/js/bootstrap');

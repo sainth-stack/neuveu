@@ -1,4 +1,5 @@
 'use client'
+import FifthSection from './FifthSection';
 import MiddleContent from './FirstSection';
 import FourthSection from './FourthSection';
 import SecondSection from './SecondSection';
@@ -15,6 +16,7 @@ const MainRoot = () => {
     <SecondSection />
     <ThirdSection />
     <FourthSection />
+    <FifthSection />
   </>;
 };
 
