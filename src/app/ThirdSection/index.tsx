@@ -84,7 +84,7 @@ const ThirdSection = () => {
 						End-to-end services for your digital and cloud needs, with ongoing support and maintenance	.`}
                 />
 
-                <Button variant="outlined" style={{ background: '#02010100', borderColor: '#15F1FF', borderRadius: '30px', padding: '7px 25px', fontSize: '12px', borderWidth: '1px', marginTop: '60px', color: '#fff' }}>Request A Consultation</Button>
+                <Button variant="outlined" style={{ background: '#02010100', borderColor: '#15F1FF', borderRadius: '30px', padding: '7px 25px', fontSize: '12px', borderWidth: '1px', marginTop: '70px', color: '#fff' }}>Request A Consultation</Button>
               </Grid>
             </Grid>
             <Grid container justifyContent={'center'} gap={'60px'}>
