@@ -36,8 +36,7 @@ export default function MiddleContent() {
         container
         justifyContent='center'
         display={'flex'}
-        gap={'80px'}
-        mt={'600px'}
+        mt={'500px'}
         sx={{ zIndex: 1 }}
       >
 
@@ -47,6 +46,7 @@ export default function MiddleContent() {
           fontWeight={'500'}
           lineHeight={'24px'}
           color='#F8F9FA'
+
         >
           We can help to maintain and modernize your Digital & Cloud
           infrastructure and solve various <br /> digital
@@ -58,6 +58,7 @@ export default function MiddleContent() {
           fontWeight={'400'}
           lineHeight={'24px'}
           color='#F8F9FA'
+          pt={'80px'}
         >
           Neu Veu is the partner of choice for many of the world’s leading
           <br /> enterprises, SMEs and technology challengers. We help

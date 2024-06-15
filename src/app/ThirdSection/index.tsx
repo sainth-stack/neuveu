@@ -87,20 +87,20 @@ const ThirdSection = () => {
                 <Button variant="outlined" style={{ background: '#02010100', borderColor: '#15F1FF', borderRadius: '30px', padding: '7px 25px', fontSize: '12px', borderWidth: '1px', marginTop: '70px', color: '#fff' }}>Request A Consultation</Button>
               </Grid>
             </Grid>
-            <Grid container justifyContent={'center'} gap={'60px'}>
+            <Grid container display={'flex'} justifyContent={'center'} gap={'150px'}>
               <Grid item display={'flex'} gap={'20px'} justifyContent={'center'} alignItems={'center'}>
-                <Typography fontSize={'40px'} fontWeight={'400'} color='#F8F9FA'><NumberAnimation number={numbers.number1} /></Typography>
-                <Typography fontSize={'12px'} fontWeight={'300'} lineHeight={'25px'} color='#F8F9FA'>YEARS OF CONSULTING <br /> EXPERIENCE</Typography>
+                <Typography fontSize={'40px'} color='#F8F9FA'><NumberAnimation number={numbers.number1} />+</Typography>
+                <Typography fontSize={'12px'} fontWeight={'300'} lineHeight={'18px'} color='#F8F9FA'>YEARS OF CONSULTING <br /> EXPERIENCE</Typography>
 
               </Grid>
               <Grid item display={'flex'} gap={'20px'} justifyContent={'center'} alignItems={'center'}>
-                <Typography fontSize={'40px'} fontWeight={'400'} color='#F8F9FA'><NumberAnimation number={numbers.number2} /></Typography>
-                <Typography fontSize={'12px'} fontWeight={'300'} lineHeight={'25px'} color='#F8F9FA'>PROJECTS <br /> COMPLETED</Typography>
+                <Typography fontSize={'40px'} color='#F8F9FA'><NumberAnimation number={numbers.number2} /></Typography>
+                <Typography fontSize={'12px'} fontWeight={'300'} lineHeight={'18px'} color='#F8F9FA'>PROJECTS <br /> COMPLETED</Typography>
 
               </Grid>
               <Grid item display={'flex'} gap={'20px'} justifyContent={'center'} alignItems={'center'}>
-                <Typography fontSize={'40px'} fontWeight={'400'} color='#F8F9FA'><NumberAnimation number={numbers.number3} /></Typography>
-                <Typography fontSize={'12px'} fontWeight={'300'} lineHeight={'25px'} color='#F8F9FA'>SATISFIED CLIENTS ON   <br />8 COUNTRIES</Typography>
+                <Typography fontSize={'40px'} color='#F8F9FA'><NumberAnimation number={numbers.number3} /></Typography>
+                <Typography fontSize={'12px'} fontWeight={'300'} lineHeight={'18px'} color='#F8F9FA'>SATISFIED CLIENTS ON   <br />8 COUNTRIES</Typography>
 
               </Grid>
             </Grid>
