@@ -1,13 +1,14 @@
 'use client';
 
-import { ReactNode, useEffect } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import '../styles/index.scss';
 // import ScrollToTop from '@/components/common/ScrollTop';
 import Footer from '@/app/footer/page';
 import Header from '@/components/Header/Header';
 import AnimatedCursor from "react-animated-cursor";
 import ScrollToTop from '@/components/Header/ScrollTop';
-
+import Header2 from '@/components/Header2';
+import { usePathname } from 'next/navigation';
 if (typeof window !== 'undefined') {
   require('bootstrap/dist/js/bootstrap');
 }
@@ -17,7 +18,23 @@ interface IRootLayout {
 }
 
 export default function RootLayout({ children }: IRootLayout) {
+  const pathname = usePathname();
+  const [showHeader2, setShowHeader2] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setShowHeader2(true);
+      } else {
+        setShowHeader2(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <html lang='en'>
       <head>
@@ -51,7 +68,7 @@ export default function RootLayout({ children }: IRootLayout) {
           />
         </div>
         <div className='main-page-wrapper'>
-          <Header />
+          {pathname === '/contactus' && showHeader2 ? <Header2 /> : <Header />}
           {children}
           <Footer />
           <ScrollToTop />
