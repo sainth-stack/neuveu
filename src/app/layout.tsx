@@ -54,13 +54,12 @@ export default function RootLayout({ children }: IRootLayout) {
             outerScale={1}
             outerStyle={{
               borderRadius: "50%",
-              borderWidth: "2px",
-              borderStyle: "solid",
-              // borderImage: "linear-gradient(to right, #0DCAF0, #6F42C1, #D63384) 1",
-              // boxSizing: "border-box",
+              border: "double 2px transparent",
+              backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),linear-gradient(to right, rgba(13, 202, 240, 0.6), rgba(111, 66, 193, 0.6), rgba(214, 51, 132, 0.6))",
               width: "35px",
               height: "35px",
-              // backgroundClip: "content-box"
+              backgroundOrigin: "border-box",
+              backgroundClip: "content-box, border-box"
             }}
             innerStyle={{
               backgroundColor: "#0dcaf0",
